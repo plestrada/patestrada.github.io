@@ -1,9 +1,3 @@
-To move everything inside the left pane, you can simply wrap the header, main, and footer sections with a div and give it a class of "main-container". Then, you can adjust the CSS rules for the left pane and the main-container class to achieve the desired layout.
-
-Here's an updated version of your code with these changes:
-
-php
-Copy code
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,10 +7,10 @@ Copy code
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 	<style>
 		* {
-			box-sizing: border-box;
-			margin: 0;
-			padding: 0;
-		}
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	      }
 		body {
 			background-color: #f6f6f6;
 			font-family: 'Poppins', sans-serif;
@@ -25,7 +19,7 @@ Copy code
 			margin: 0;
 			padding: 0;
 		}
-		.left-pane {
+		      .left-pane {
 			width: 25%;
 			background-color: #f2f2f2;
 			height: 100vh;
@@ -33,22 +27,22 @@ Copy code
 			top: 0;
 			left: 0;
 			padding: 20px;
-		}
-		.left-pane h2 {
+		      }
+		      .left-pane h2 {
 			margin-bottom: 20px;
-		}
-		.left-pane ul {
+		      }
+		      .left-pane ul {
 			list-style-type: none;
 			margin: 0;
 			padding: 0;
-		}
-		.left-pane li {
+		      }
+		      .left-pane li {
 			margin-bottom: 10px;
-		}
-		.left-pane a {
+		      }
+		      .left-pane a {
 			color: #333;
 			text-decoration: none;
-		}
+		      }
 		h1 {
 			font-size: 3rem;
 			margin-top: 4rem;
@@ -65,19 +59,22 @@ Copy code
 			line-height: 2;
 			padding: 0;
 		}
+		
 		.social-icons {
-			display: flex;
-			justify-content: center;
-			margin-top: 2rem;
+		  display: flex;
+		  justify-content: center;
+		  margin-top: 2rem;
 		}
+
 		.social-icons__icon {
-			display: inline-block;
-			width: 50px;
-			height: 50px;
-			margin: 0 1rem;
-			background-size: contain;
-			background-repeat: no-repeat;
+		  display: inline-block;
+		  width: 50px;
+		  height: 50px;
+		  margin: 0 1rem;
+		  background-size: contain;
+		  background-repeat: no-repeat;
 		}
+		
 		.center {
 			display: flex;
 			flex-direction: column;
@@ -87,14 +84,12 @@ Copy code
 			padding: 2rem; /* add padding */
 			margin: 0 1rem; /* add margin */
 		}
-		.main-container {
-			display: flex;
-			margin-left: 25%; /* match the width of the left pane */
-			padding: 2rem;
+		main {
+		  margin-left: 25%;
 		}
 	</style>
 </head>
-
+	
 <body>
 	<div class="left-pane">
 		<h2>Navigation</h2>
@@ -103,29 +98,27 @@ Copy code
 			<li><a href="https://plestrada.github.io/blog/">blog</a></li>
 		</ul>
 	</div>
-	<div class="main-container">
-		<header>
-			<h1>Hello and welcome to The Data Science Playground!</h1>
-			<h2>I'm Pat Estrada 👋 Researcher and data analyst with a strong passion for data for good initiatives</h2>
-		</header>
+	<header>
+		<h1>Hello and welcome to The Data Science Playground!</h1>
+		<h2>I'm Pat Estrada 👋 Researcher and data analyst with a strong passion for data for good initiatives</h2>
+	</header>
+	<main>
 		<div class="center">
 			<p>As a firm believer in the transformative power of data, I have devoted my professional and personal pursuits to honing my skills in data analysis, machine learning, and data visualization. On this platform, you will find a documentation of my data science journey, with projects representing unique challenges that I have tackled with the goal of producing top-quality solutions that drive real-world change.</p>
-			<footer>
-				<p>Thank you for visiting my Github pages, and I look forward to connecting with you soon.</p>
-				<div class="social-icons">
-					<a class="social-icons__icon" title="GitHub"
-					   style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg)" 
-					   href="https://github.com/plestrada"
-					   target="_blank" rel="noopener">
-					</a>
-					<a class="social-icons__icon" title="LinkedIn"
-					   style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/2048px-LinkedIn_icon.svg.png)" 
-					   href="https://linkedin.com/in/patrishaestrada"
-					   target="_blank" rel="noopener">
-					</a>
-				</div>
-			</footer>
+	<footer>
+		<p>Thank you for visiting my Github pages, and I look forward to connecting with you soon.</p>
+		<div class="social-icons">
+			<a class="social-icons__icon" title="GitHub"
+			   style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg)" 
+			   href="https://github.com/plestrada"
+			   target="_blank" rel="noopener">
+			</a>
+			<a class="social-icons__icon" title="LinkedIn"
+			   style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/2048px-LinkedIn_icon.svg.png)" 
+			   href="https://linkedin.com/in/patrishaestrada"
+			   target="_blank" rel="noopener">
+			</a>
 		</div>
-	</div>
+	</footer>
 </body>
 </html>
