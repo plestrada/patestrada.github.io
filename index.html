@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pat Estrada's Data Science Playground</title>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+	<style>
+		* {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	      }
+		body {
+			background-color: #f6f6f6;
+			font-family: 'Poppins', sans-serif;
+			color: #333;
+			text-align: center;
+			margin: 0;
+			padding: 0;
+		}
+		      .left-pane {
+			width: 25%;
+			background-color: #f2f2f2;
+			height: 100vh;
+			position: fixed;
+			top: 0;
+			left: 0;
+			padding: 20px;
+		      }
+		      .left-pane h2 {
+			margin-bottom: 20px;
+		      }
+		      .left-pane ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		      }
+		      .left-pane li {
+			margin-bottom: 10px;
+		      }
+		      .left-pane a {
+			color: #333;
+			text-decoration: none;
+		      }
+		h1 {
+			font-size: 3rem;
+			margin-top: 10rem;
+			margin-bottom: 1rem;
+		}
+		h2 {
+			font-size: 2rem;
+			font-weight: 300;
+			margin-top: 2rem;
+			margin-bottom: 1rem;
+			color: #888; 
+		}
+		p {
+			font-size: 1.5rem;
+			margin-top: 1rem;
+			line-height: 2;
+			padding: 0;
+		}
+		
+		.social-icons {
+		  display: flex;
+		  justify-content: center;
+		  margin-top: 2rem;
+		}
+
+		.social-icons__icon {
+		  display: inline-block;
+		  width: 50px;
+		  height: 50px;
+		  margin: 0 1rem;
+		  background-size: contain;
+		  background-repeat: no-repeat;
+		}
+		
+		.center {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 70vh; /* 70% of viewport height */
+			padding: 2rem; /* add padding */
+			margin: 0 1rem; /* add margin */
+		}
+		main {
+		  margin-left: 25%;
+		}
+		header {
+		  margin-left: 25%;
+		}
+	</style>
+</head>
+	
+<body>
+	<div class="left-pane">
+		<h2>Navigation</h2>
+		<ul>
+			<li><a href="https://plestrada.github.io/home/">home</a></li>
+			<li><a href="#">blog</a></li>
+		</ul>
+	</div>
+	<header>
+		<h1>
+			<span id="typewriter"></span>
+	      	</h1>    
+	</header>
+	<main>
+		<div class="center">
+			<p>Welcome to my data science playground! As a firm believer in the transformative power of data, I have devoted my professional and personal pursuits to honing my skills in data analysis, machine learning, and data visualization. On this platform, you will find a documentation of my data science journey, with projects representing unique challenges that I have tackled with the goal of producing top-quality solutions that drive real-world change.</p>
+	
+		<script type="module">  
+			const instance = new Typewriter('#typewriter', {
+			strings: ["Hi! I'm Pat Estrada, a data analyst & scientist 👋"],
+			autoStart: true,
+			loop: true,
+		});
+		</script>
+			
+	<footer>
+		<p>Thank you for taking the time to visit my Github pages. If you have any questions or would like to connect, please don't hesitate to reach out.</p>
+		<div class="social-icons">
+			<a class="social-icons__icon" title="GitHub"
+			   style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg)" 
+			   href="https://github.com/plestrada"
+			   target="_blank" rel="noopener">
+			</a>
+			<a class="social-icons__icon" title="LinkedIn"
+			   style="background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/2048px-LinkedIn_icon.svg.png)" 
+			   href="https://linkedin.com/in/patrishaestrada"
+			   target="_blank" rel="noopener">
+			</a>
+		</div>
+	</footer>
+	
+	<script src="https://cdn.jsdelivr.net/npm/typewriter-effect@2.18.0/dist/core.js"></script>
+</body>
+</html>
